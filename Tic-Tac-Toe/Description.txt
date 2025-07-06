@@ -1,0 +1,11 @@
+1. This is a simple and interactive Tic Tac Toe game built using HTML, CSS, and plain JavaScript.
+
+2. The game logic is implemented using straightforward JavaScript, making it easy to understand and beginner-friendly.
+
+3. What sets this project apart is the AI-inspired styling in CSS, which adds a smart and modern feel to the user interface
+   with smooth animations and clean visuals.
+
+4. While the gameplay itself uses basic logic, the UI design reflects intelligent, responsive behavior,
+   creating a more engaging experience.
+
+5. Perfect for those learning front-end development or looking to explore web-based game creation.
