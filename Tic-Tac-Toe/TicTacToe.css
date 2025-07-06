@@ -18,9 +18,38 @@
 
 body
 {
-    background-color: #B1B2FF ;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
     text-align: center;
 }
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Ensure text is readable on the animated background */
+.Heading, #h1, #msg {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.box {
+    background-color: rgba(255, 250, 183, 0.8); /* Slightly transparent */
+}
+
+/* ... rest of your existing CSS rules ... */
+
 
 .Container
 {
@@ -219,4 +248,63 @@ body
 .hide
 {
     display: none;
+}
+
+
+/* Floating Logos */
+.floating-logos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.floating-logo {
+    position: absolute;
+    opacity: 0.1;
+    width: 100px;
+    height: auto;
+    animation: float 20s infinite linear;
+}
+
+.floating-logo:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 15s;
+}
+
+.floating-logo:nth-child(2) {
+    top: 50%;
+    left: 75%;
+    animation-duration: 25s;
+    animation-delay: -5s;
+}
+
+.floating-logo:nth-child(3) {
+    top: 80%;
+    left: 40%;
+    animation-duration: 20s;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(100px, 100px) rotate(90deg);
+    }
+    50% {
+        transform: translate(200px, 0) rotate(180deg);
+    }
+    75% {
+        transform: translate(100px, -100px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
 }
