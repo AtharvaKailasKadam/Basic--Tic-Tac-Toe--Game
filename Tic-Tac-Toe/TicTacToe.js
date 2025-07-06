@@ -72,7 +72,7 @@ const CheckWinner = () => {
             if(Posi1Val === Posi2Val && Posi2Val === Posi3Val)
             {
                 console.log("Winner...!");
-                console.log("The Winner is..: ", Posi1Val);
+                console.log("The Winner is..:- ", Posi1Val);
                 showWinner(Posi1Val);
             }
         }
