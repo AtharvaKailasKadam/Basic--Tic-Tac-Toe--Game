@@ -55,7 +55,7 @@ const EnableButton = () =>{
 }
 
 const showWinner = (Winner) => {
-    msg.innerText = `Congratulations..! Winner is..:-${Winner}`;
+    msg.innerText = `Congratulations..! Winner is..: ${Winner}`;
     MsgContainer.classList.remove("hide");
     DisableButton();
 }
